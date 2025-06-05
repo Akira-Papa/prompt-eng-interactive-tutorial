@@ -1,58 +1,114 @@
-# Welcome to Anthropic's Prompt Engineering Interactive Tutorial
+# Anthropicのプロンプトエンジニアリング・インタラクティブチュートリアル
 
-## Course introduction and goals
+Anthropicのインタラクティブなプロンプトエンジニアリングチュートリアルへようこそ！このチュートリアルでは、モデルプロバイダーを問わず使えるプロンプティングの基礎を学習します。
 
-This course is intended to provide you with a comprehensive step-by-step understanding of how to engineer optimal prompts within Claude.
+<br>
 
-**After completing this course, you will be able to**:
-- Master the basic structure of a good prompt 
-- Recognize common failure modes and learn the '80/20' techniques to address them
-- Understand Claude's strengths and weaknesses
-- Build strong prompts from scratch for common use cases
+<img src="./assets/header.png" alt="Anthropic Logo" width="600">
 
-## Course structure and content
+---
 
-This course is structured to allow you many chances to practice writing and troubleshooting prompts yourself. The course is broken up into **9 chapters with accompanying exercises**, as well as an appendix of even more advanced methods. It is intended for you to **work through the course in chapter order**. 
+## 🎯 **対象者は？**
+このチュートリアルは、経験レベルに関係なく**現代のプロンプティング技術**を学びたい方を対象としています。AIが初めての方でも、経験豊富な開発者でも、言語モデルからより良い結果を得るのに役立つ実践的な技術を発見できます。
 
-**Each lesson has an "Example Playground" area** at the bottom where you are free to experiment with the examples in the lesson and see for yourself how changing prompts can change Claude's responses. There is also an [answer key](https://docs.google.com/spreadsheets/d/1jIxjzUWG-6xBVIa2ay6yDpLyeuOh_hR_ZB75a47KX_E/edit?usp=sharing).
+<br>
 
-Note: This tutorial uses our smallest, fastest, and cheapest model, Claude 3 Haiku. Anthropic has [two other models](https://docs.anthropic.com/claude/docs/models-overview), Claude 3 Sonnet and Claude 3 Opus, which are more intelligent than Haiku, with Opus being the most intelligent.
+## 🧠 **何を学べるの？**
+### **中核となる基礎:**
+- 効果的なプロンプトの構造化方法
+- 明確性と精度のベストプラクティス
+- AIとの安全で責任ある作業
 
-*This tutorial also exists on [Google Sheets using Anthropic's Claude for Sheets extension](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weA6qRXG5zLIAhC8/edit?usp=sharing). We recommend using that version as it is more user friendly.*
+### **高度な技術:**
+- ロールプロンプティングとペルソナ割り当て
+- 例を使ったFew-Shotプロンプティング
+- 思考連鎖推論
+- プロンプトチェーンと複雑なワークフロー
+- ツール使用と関数呼び出し
+- 幻覚の軽減
 
-When you are ready to begin, go to `01_Basic Prompt Structure` to proceed.
+<br>
 
-## Table of Contents
+## 🎓 **チュートリアル構成**
 
-Each chapter consists of a lesson and a set of exercises.
+このチュートリアルには**実践的なGoogle Sheetsバージョン**と**Jupyterノートブック**が含まれています。最適な方法を選択してください！
 
-### Beginner
-- **Chapter 1:** Basic Prompt Structure
+### **📊 Google Sheets（初心者向けお勧め）**
+入門に最適 - コーディング不要！
+- **[Google Sheetsチュートリアルはこちら →](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weOuttqDhiTCVcgA/edit?usp=sharing)**
 
-- **Chapter 2:** Being Clear and Direct  
+### **📓 Jupyter Notebooks（開発者向け）**
+3つの異なるバージョンが利用可能：
 
-- **Chapter 3:** Assigning Roles
+1. **[Anthropic 1P/](./Anthropic%201P/)** - 直接Anthropic API
+2. **[AmazonBedrock/anthropic/](./AmazonBedrock/anthropic/)** - Bedrock経由のAnthropic SDK
+3. **[AmazonBedrock/boto3/](./AmazonBedrock/boto3/)** - Bedrockでのboto3
 
-### Intermediate 
-- **Chapter 4:** Separating Data from Instructions
+<br>
 
-- **Chapter 5:** Formatting Output & Speaking for Claude
+## 🚀 **始め方**
 
-- **Chapter 6:** Precognition (Thinking Step by Step)
+### **Google Sheetsの場合:**
+1. [こちら](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weOuttqDhiTCVcgA/edit?usp=sharing)をクリックしてチュートリアルにアクセス
+2. シートをGoogle Driveにコピー
+3. 「始め方」タブの指示に従ってください
 
-- **Chapter 7:** Using Examples
+### **Jupyter Notebooksの場合:**
+1. このリポジトリをクローン
+2. お好みのバージョンを選択（1P、Anthropic SDK、またはboto3）
+3. `00_Tutorial_How-To.ipynb`ファイルのセットアップ指示に従ってください
 
-### Advanced
-- **Chapter 8:** Avoiding Hallucinations
+<br>
 
-- **Chapter 9:** Building Complex Prompts (Industry Use Cases)
-  - Complex Prompts from Scratch - Chatbot
-  - Complex Prompts for Legal Services
-  - **Exercise:** Complex Prompts for Financial Services
-  - **Exercise:** Complex Prompts for Coding
-  - Congratulations & Next Steps
+## 📚 **チュートリアル章立て**
 
-- **Appendix:** Beyond Standard Prompting
-  - Chaining Prompts
-  - Tool Use
-  - Search & Retrieval
+1. **基本的なプロンプト構造** - 構成要素を学ぶ
+2. **明確で直接的であること** - 正確な指示を作る
+3. **ロールプロンプティング** - 有用なペルソナを割り当てる
+4. **データと指示の分離** - 入力を明確に構造化する
+5. **出力のフォーマット** - Claudeの応答方法を制御する
+6. **段階的思考** - 推論プロセスを導く
+7. **例の使用** - Few-Shotプロンプティングを活用する
+8. **幻覚の回避** - 応答を根拠に基づかせる
+9. **複雑なプロンプト** - 洗練されたワークフローを構築する
+
+**付録も含む:**
+- プロンプトチェーン
+- ツール使用と関数呼び出し
+- 実証的パフォーマンス評価
+- 検索と取得技術
+
+<br>
+
+## 🔧 **前提条件**
+
+- **Google Sheetsバージョン:** Googleアカウントのみ
+- **Jupyterノートブック:** PythonとJupyterの基本的な知識
+- **APIアクセス:** AnthropicのAPIまたはAmazon Bedrock経由でClaudeへのアクセスが必要
+
+<br>
+
+## 💡 **成功のためのヒント**
+
+- プロンプティングが初めての場合は**Google Sheetsバージョンから始める**
+- **自由に実験する** - 例を修正してみる
+- **説明を注意深く読む** - 技術が*なぜ*機能するかを理解することが重要
+- チュートリアルを進めながら**自分の使用事例で練習する**
+
+<br>
+
+## 🤝 **貢献**
+
+貢献を歓迎します！ガイドラインについては[CONTRIBUTING.md](./CONTRIBUTING.md)をご覧ください。
+
+<br>
+
+## 📄 **ライセンス**
+
+このチュートリアルは[MITライセンス](./LICENSE)の下で公開されています。
+
+---
+
+**プロンプティングエキスパートになる準備はできましたか？** [Google Sheetsチュートリアル](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weOuttqDhiTCVcgA/edit?usp=sharing)から始めるか、Jupyterノートブックに飛び込んでください！
+
+質問やフィードバックについては、このリポジトリにissueを開いてください。

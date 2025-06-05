@@ -1,49 +1,49 @@
-exercise_1_1_hint = """The grading function in this exercise is looking for an answer that contains the exact Arabic numerals "1", "2", and "3".
-You can often get Claude to do what you want simply by asking."""
+exercise_1_1_hint = """この演習の採点関数は、正確なアラビア数字「1」、「2」、「3」を含む回答を探しています。
+Claudeに望むことをしてもらうには、単純にお願いするだけで済むことが多いです。"""
 
-exercise_1_2_hint = """The grading function in this exercise is looking for answers that contain "soo" or "giggles".
-There are many ways to solve this, just by asking!"""
+exercise_1_2_hint = """この演習の採点関数は、「soo」または「giggles」を含む回答を探しています。
+これを解決する方法はたくさんあります。お願いするだけです！"""
 
-exercise_2_1_hint ="""The grading function in this exercise is looking for any answer that includes the word "hola".
-Ask Claude to reply in Spanish like you would when speaking with a human. It's that simple!"""
+exercise_2_1_hint ="""この演習の採点関数は、「hola」という単語を含む回答を探しています。
+人間と話すときのように、Claudeにスペイン語で返答するよう求めてください。それだけです！"""
 
-exercise_2_2_hint = """The grading function in this exercise is looking for EXACTLY "Michael Jordan".
-How would you ask another human to do this? Reply with no other words? Reply with only the name and nothing else? There are several ways to approach this answer."""
+exercise_2_2_hint = """この演習の採点関数は、正確に「Michael Jordan」を探しています。
+これを人間に依頼するとしたら、どのように頼みますか？他の言葉なしで返答？名前のみで他は何もなし？このアプローチにはいくつかの方法があります。"""
 
-exercise_2_3_hint = """The grading function in this cell is looking for a response that is equal to or greater than 800 words.
-Because LLMs aren't great at counting words yet, you may have to overshoot your target."""
+exercise_2_3_hint = """このセルの採点関数は、800語以上の回答を探しています。
+LLMはまだ単語数を数えるのが得意ではないため、目標を上回る必要があるかもしれません。"""
 
-exercise_3_1_hint = """The grading function in this exercise is looking for an answer that includes the words "incorrect" or "not correct".
-Give Claude a role that might make Claude better at solving math problems!"""
+exercise_3_1_hint = """この演習の採点関数は、「incorrect」または「not correct」という言葉を含む回答を探しています。
+Claudeに数学問題をより良く解けるような役割を与えてください！"""
 
-exercise_4_1_hint = """The grading function in this exercise is looking for a solution that includes the words "haiku" and "pig".
-Don't forget to include the exact phrase "{TOPIC}" wherever you want the topic to be substituted in. Changing the "TOPIC" variable value should make Claude write a haiku about a different topic."""
+exercise_4_1_hint = """この演習の採点関数は、「haiku」と「pig」という言葉を含む解決策を探しています。
+トピックを代入したい場所に正確に「{TOPIC}」というフレーズを含めることを忘れないでください。「TOPIC」変数の値を変更すると、Claudeが異なるトピックについて俳句を書くようになります。"""
 
-exercise_4_2_hint = """The grading function in this exercise is looking for a response that includes the word "brown".
-If you surround "{QUESTION}" in XML tags, how does that change Claude's response?"""
+exercise_4_2_hint = """この演習の採点関数は、「brown」という単語を含む回答を探しています。
+「{QUESTION}」をXMLタグで囲むと、Claudeの回答がどのように変わりますか？"""
 
-exercise_4_3_hint = """The grading function in this exercise is looking for a response that includes the word "brown".
-Try removing one word or section of characters at a time, starting with the parts that make the least sense. Doing this one word at a time will also help you see just how much Claude can or can't parse and understand."""
+exercise_4_3_hint = """この演習の採点関数は、「brown」という単語を含む回答を探しています。
+最も意味をなさない部分から始めて、一度に一つの単語または文字の部分を削除してみてください。一度に一つの単語ずつ実行することで、Claudeがどの程度解析・理解できるかも確認できます。"""
 
-exercise_5_1_hint = """The grading function for this exercise is looking for a response that includes the word "Warrior".
-Write more words in Claude's voice to steer Claude to act the way you want it to. For instance, instead of "Stephen Curry is the best because," you could write "Stephen Curry is the best and here are three reasons why. 1:"""
+exercise_5_1_hint = """この演習の採点関数は、「Warrior」という単語を含む回答を探しています。
+Claudeの声でより多くの言葉を書いて、Claudeが望む通りに行動するよう導いてください。例えば、「Stephen Curry is the best because」の代わりに、「Stephen Curry is the best and here are three reasons why. 1:」と書くことができます。"""
 
-exercise_5_2_hint = """The grading function looks for a response of over 5 lines in length that includes the words "cat" and "<haiku>".
-Start simple. Currently, the prompt asks Claude for one haiku. You can change that and ask for two (or even more). Then if you run into formatting issues, change your prompt to fix that after you've already gotten Claude to write more than one haiku."""
+exercise_5_2_hint = """採点関数は、「cat」と「<haiku>」という単語を含む5行以上の回答を探しています。
+シンプルに始めましょう。現在、プロンプトはClaudeに一つの俳句を求めています。それを変更して二つ（またはそれ以上）を求めることができます。フォーマットの問題が発生した場合は、Claudeに複数の俳句を書かせることができた後で、それを修正するようプロンプトを変更してください。"""
 
-exercise_5_3_hint = """The grading function in this exercise is looking for a response that contains the words "tail", "cat", and "<haiku>".
-It's helpful to break this exercise down to several steps.								
-1.	Modify the initial prompt template so that Claude writes two poems.							
-2.	Give Claude indicators as to what the poems will be about, but instead of writing in the subjects directly (e.g., dog, cat, etc.), replace those subjects with the keywords "{ANIMAL1}" and "{ANIMAL2}".							
-3.	Run the prompt and make sure that the full prompt with variable substitutions has all the words correctly substituted. If not, check to make sure your {bracket} tags are spelled correctly and formatted correctly with single moustache brackets."""
+exercise_5_3_hint = """この演習の採点関数は、「tail」、「cat」、「<haiku>」という単語を含む回答を探しています。
+この演習をいくつかのステップに分けると便利です。								
+1.	Claudeが二つの詩を書くように初期プロンプトテンプレートを修正する。							
+2.	詩のテーマについてClaudeに指示を与えるが、主題を直接書く（例：犬、猫など）代わりに、その主題を「{ANIMAL1}」と「{ANIMAL2}」というキーワードで置き換える。							
+3.	プロンプトを実行し、変数代入を含む完全なプロンプトですべての単語が正しく代入されていることを確認する。そうでない場合は、{bracket}タグが正しくスペルされ、単一の山括弧で正しくフォーマットされていることを確認する。"""
 
-exercise_6_1_hint = """The grading function in this exercise is looking for the correct categorization letter + the closing parentheses and the first letter of the name of the category, such as "C) B" or "B) B" etc.
-Let's take this exercise step by step:										
-1.	How will Claude know what categories you want to use? Tell it! Include the four categories you want directly in the prompt. Be sure to include the parenthetical letters as well for easy classification. Feel free to use XML tags to organize your prompt and make clear to Claude where the categories begin and end.									
-2.	Try to cut down on superfluous text so that Claude immediately answers with the classification and ONLY the classification. There are several ways to do this, from speaking for Claude (providing anything from the beginning of the sentence to a single open parenthesis so that Claude knows you want the parenthetical letter as the first part of the answer) to telling Claude that you want the classification and only the classification, skipping the preamble.
-Refer to Chapters 2 and 5 if you want a refresher on these techniques.							
-3.	Claude may still be incorrectly categorizing or not including the names of the categories when it answers. Fix this by telling Claude to include the full category name in its answer.)								
-4.	Be sure that you still have {email} somewhere in your prompt template so that we can properly substitute in emails for Claude to evaluate."""
+exercise_6_1_hint = """この演習の採点関数は、正しい分類文字 + 閉じ括弧 + カテゴリ名の最初の文字（「C) B」や「B) B」など）を探しています。
+この演習を段階的に進めましょう：										
+1.	Claudeにどのカテゴリを使用したいかをどのように知らせますか？教えてください！使用したい四つのカテゴリをプロンプトに直接含めてください。簡単な分類のために括弧文字も含めてください。XMLタグを使ってプロンプトを整理し、カテゴリがどこで始まりどこで終わるかをClaudeに明確にしてください。									
+2.	Claudeが分類のみで即座に答えるよう、余分なテキストを削減してください。文の始まりから単一の開き括弧まで何でも提供してClaudeに答えの最初の部分として括弧文字が欲しいことを知らせることから、前置きをスキップして分類のみが欲しいとClaudeに伝えることまで、いくつかの方法があります。
+これらのテクニックの復習が必要な場合は第2章と第5章を参照してください。							
+3.	Claudeはまだ間違って分類しているか、答える際にカテゴリ名を含めていない可能性があります。答えに完全なカテゴリ名を含めるようClaudeに指示してこれを修正してください。								
+4.	Claudeが評価するメールを適切に代入できるよう、プロンプトテンプレートのどこかに{email}があることを確認してください。"""
 
 exercise_6_1_solution = """
 USER TURN
@@ -62,13 +62,13 @@ ASSISTANT TURN
 (
 """
 
-exercise_6_2_hint = """The grading function in this exercise is looking for only the correct letter wrapped in <answer> tags, such as "<answer>B</answer>". The correct categorization letters are the same as in the above exercise.
-Sometimes the simplest way to go about this is to give Claude an example of how you want its output to look. Just don't forget to wrap your example in <example></example> tags! And don't forget that if you prefill Claude's response with anything, Claude won't actually output that as part of its response."""
+exercise_6_2_hint = """この演習の採点関数は、「<answer>B</answer>」のような<answer>タグで囲まれた正しい文字のみを探しています。正しい分類文字は上記の演習と同じです。
+これを行う最も簡単な方法は、出力がどのように見えるかの例をClaudeに与えることです。例を<example></example>タグで囲むことを忘れないでください！また、Claudeの回答を何かで事前入力する場合、Claudeは実際にはそれを回答の一部として出力しないことを忘れないでください。"""
 
-exercise_7_1_hint = """You're going to have to write some example emails and classify them for Claude (with the exact formatting you want). There are multiple ways to do this. Here are some guidelines below.										
-1.	Try to have at least two example emails. Claude doesn't need an example for all categories, and the examples don't have to be long. It's more helpful to have examples for whatever you think the trickier categories are (which you were asked to think about at the bottom of Chapter 6 Exercise 1). XML tags will help you separate out your examples from the rest of your prompt, although it's unnecessary.									
-2.	Make sure your example answer formatting is exactly the format you want Claude to use, so Claude can emulate the format as well. This format should make it so that Claude's answer ends in the letter of the category. Wherever you put the {email} placeholder, make sure that it's formatted exactly like your example emails.									
-3.	Make sure you still have the categories listed within the prompt itself, otherwise Claude won't know what categories to reference, as well as {email} as a placeholder for substitution."""
+exercise_7_1_hint = """（求めているフォーマットで）Claudeのためにいくつかのサンプルメールを書いて分類する必要があります。これを行う方法は複数あります。以下にガイドラインをいくつか示します。										
+1.	少なくとも二つのサンプルメールを作成してください。Claudeはすべてのカテゴリの例は必要なく、例は長くある必要もありません。より難しいと思われるカテゴリ（第6章演習1の最後で考えるよう求められたもの）の例があると便利です。XMLタグは例をプロンプトの他の部分から分離するのに役立ちますが、必須ではありません。									
+2.	サンプル回答のフォーマットが、Claudeに使用してもらいたい正確なフォーマットになっていることを確認してください。そうすればClaudeもそのフォーマットを模倣できます。このフォーマットでは、Claudeの回答がカテゴリの文字で終わるようにします。{email}プレースホルダーを配置する場所では、サンプルメールと同じようにフォーマットされていることを確認してください。									
+3.	プロンプト自体にカテゴリがリストされていることと、代入用のプレースホルダーとして{email}があることを確認してください。そうでなければClaudeは参照すべきカテゴリを知りません。"""
 
 exercise_7_1_solution = """
 USER TURN
@@ -97,11 +97,11 @@ Here is the email for you to categorize: {email}
 ASSISTANT TURN
 The correct category is:
 """
-exercise_8_1_hint = """The grading function in this exercise is looking for a response that contains the phrase "I do not", "I don't", or "Unfortunately".
-What should Claude do if it doesn't know the answer?"""
+exercise_8_1_hint = """この演習の採点関数は、「I do not」、「I don't」、または「Unfortunately」というフレーズを含む回答を探しています。
+Claudeが答えを知らない場合、何をすべきでしょうか？"""
 
-exercise_8_2_hint = """The grading function in this exercise is looking for a response that contains the phrase "49-fold".
-Make Claude show its work and thought process first by extracting relevant quotes and seeing whether or not the quotes provide sufficient evidence. Refer back to the Chapter 8 Lesson if you want a refresher."""
+exercise_8_2_hint = """この演習の採点関数は、「49-fold」というフレーズを含む回答を探しています。
+関連する引用を抽出し、引用が十分な証拠を提供するかどうかを確認することで、Claudeに作業と思考プロセスを最初に示させてください。復習が必要な場合は第8章のレッスンを参照してください。"""
 
 exercise_9_1_solution = """
 You are a master tax acountant. Your task is to answer user questions using any provided reference documentation.
